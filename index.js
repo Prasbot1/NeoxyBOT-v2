@@ -27,12 +27,12 @@ async function __START() {
     const sock = sockConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Neoxy Multi Device','Safari','1.0.0'],
+        browser: ['Xyuzi Multi Device','Safari','1.0.0'],
         auth: state,
         version
     })
 
-sock.browserDescription = ["NEOXY-MD", "Mac", "3.0.0"];
+sock.browserDescription = ["Xyuzi MD", "Mac", "3.0.0"];
 sock.ev.on('messages.upsert', async chatUpdate => {
 try {
 mek = chatUpdate.messages[0]
